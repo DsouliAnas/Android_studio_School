@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        android:elevation="4dp" />
+
+    <!-- Settings Text -->
+    <TextView
+        android:id="@+id/textViewSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Dark Mode Switch -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_dark_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode" />
+
+    <!-- Notifications Switch -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Notifications"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Notification Button -->
+    <Button
+        android:id="@+id/btn_send_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Notification" />
+
+    <Button
+        android:id="@+id/btn_play_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Music" />
+
+
+</LinearLayout>

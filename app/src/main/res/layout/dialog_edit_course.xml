@@ -1,0 +1,25 @@
+<!-- res/layout/dialog_edit_course.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"/>
+
+    <EditText
+        android:id="@+id/editCourseHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Hours"
+        android:inputType="number"/>
+
+    <Spinner
+        android:id="@+id/editCourseTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

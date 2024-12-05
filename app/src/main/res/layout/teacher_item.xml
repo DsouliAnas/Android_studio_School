@@ -1,0 +1,65 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:backgroundTint="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center_horizontal">
+
+        <!-- Teacher Name -->
+        <TextView
+            android:id="@+id/teacher_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teacher Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Teacher Email -->
+        <TextView
+            android:id="@+id/teacher_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teacher Email"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Buttons in a horizontal layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"> <!-- Align buttons to the end -->
+
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textSize="14sp"
+                android:textColor="#CE2C2C" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/white"
+    android:elevation="4dp"
+    android:gravity="center_vertical">
+
+    <!-- Course name -->
+    <TextView
+        android:id="@+id/textViewCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Course hours -->
+    <TextView
+        android:id="@+id/textViewCourseHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hours: 1.5"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Course teacher -->
+    <TextView
+        android:id="@+id/textViewTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Edit and Delete Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="8dp">
+
+        <!-- Edit button -->
+        <Button
+            android:id="@+id/buttonEditCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT"
+            android:textColor="#008577"
+            android:backgroundTint="@color/white"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Delete button -->
+        <Button
+            android:id="@+id/buttonDeleteCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE"
+            android:backgroundTint="@color/white"
+            android:textColor="#FF0000"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+</LinearLayout>

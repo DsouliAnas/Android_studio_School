@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/search_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Teacher"
+        android:inputType="text" />
+
+    <!-- Button to add teacher -->
+    <Button
+        android:id="@+id/add_teacher_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Teacher"
+        android:textSize="16sp"
+        android:backgroundTint="@color/Lavender"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp" />
+
+    <!-- RecyclerView to list teachers -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/teacher_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:background="@android:color/white" />
+
+</LinearLayout>
